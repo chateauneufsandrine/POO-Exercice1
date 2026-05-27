@@ -18,32 +18,31 @@
 
 class Formule1
 {
-    private int $speed ;
-    private int $odometer;
+    private int $speed;
+
     // kilometrage total
 
-    public function __construct(int $odometer,int $speed = 0)
+    public function __construct(int $speed = 0)
     {
         $this->speed = $speed;
-        $this->odometer = $odometer;
     }
 
     // public function __construct(
     //     private int $speed = 0
     // )
     // {
-        
+
     // }
 
     public function drive(): string
     {
-        return "Vroom vroom à $this->speed km/h avec un kilométrage total de $this->odometer km";
+        return "Vroom vroom à $this->speed km/h";
     }
-     public function shiftGear(int $nombre): int
+    
+    public function shiftGear(int $nombre): int
     {
-       $this->speed += $nombre;
+        $this->speed += $nombre;
         return  $this->speed;
     }
     // ajoute un nombre et retourne la nouvelle vitesse
 }
-?>

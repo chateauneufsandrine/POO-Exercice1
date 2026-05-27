@@ -12,7 +12,7 @@ require_once "../src/Entities/Formule1.php";
 //  le passage de vitesse.
 
 
-$voiture = new Formule1(1000, 5);
+$voiture = new Formule1(5);
 
 var_dump($voiture);
 ?>
